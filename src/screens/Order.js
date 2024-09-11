@@ -1,14 +1,14 @@
 import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
 
-
-const Home = ({navigation}) => {
+const Order = () => {
   return (
     <View>
-      
+      <Text>Order</Text>
     </View>
   )
 }
 
-export default Home
+export default Order
 
 const styles = StyleSheet.create({})

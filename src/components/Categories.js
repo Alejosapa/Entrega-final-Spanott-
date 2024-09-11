@@ -2,7 +2,7 @@ import { FlatList, StyleSheet, Text, View } from 'react-native'
 import categories from '../data/categories.json'
 import Category from '../components/Category'
 
-const Categories = ({navigation}) => {
+const Categories = () => {
 
   return (
     <>

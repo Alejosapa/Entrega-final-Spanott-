@@ -2,8 +2,6 @@ import { Pressable, StyleSheet, Text, View, StatusBar, Platform } from 'react-na
 import { colors } from '../global/colors'
 import Ionicons from '@expo/vector-icons/Ionicons';
 
-
-
 const Header = ({title}) => {
   return (
     <View>
@@ -17,14 +15,12 @@ const Header = ({title}) => {
     </View>
   )
 }
-
 export default Header
 
 const styles = StyleSheet.create({
     container:{
         backgroundColor:colors.principal,
         width:"100%",
-        height:"45%",
         marginTop:Platform.OS === "android" ? StatusBar.currentHeight:0,
         padding:8,
         justifyContent: 'center', 

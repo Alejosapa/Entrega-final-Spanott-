@@ -5,6 +5,7 @@ import { fonts } from './src/global/fonts';
 import { colors } from './src/global/colors';
 import Navigator from './src/navigation/Navigator';
 
+
 export default function App() {
 
   const [fontsLoaded] = useFonts(fonts)
@@ -14,11 +15,10 @@ export default function App() {
   }
 
   return (
-    <View>
+    <>
       <Navigator/>
-
       <StatusBar style="light" backgroundColor={colors.secundario}/>
-    </View>
+    </>
   );
 }
 
