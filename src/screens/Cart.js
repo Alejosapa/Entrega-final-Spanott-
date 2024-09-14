@@ -9,7 +9,7 @@ const Cart = () => {
     <View style={styles.container}>
         <View style={styles.containerText}>
           <Text style={styles.text}>Comprar</Text>
-          <Text style={styles.text}>Total</Text>
+          <Text style={styles.text}>Total: ${cart.total} </Text>
         </View>
         <FlatList
             data={cart.items}
@@ -38,5 +38,9 @@ const styles = StyleSheet.create({
     borderColor:colors.principal,
     borderBottomLeftRadius: 15,
     borderBottomRightRadius: 15,
+  },
+  text:{
+    fontSize:15,
+    fontFamily:"Lexend"
   }
 })
