@@ -13,7 +13,8 @@ const CartItems = ({item}) => {
       />
         <Text style={styles.text1}>{item.title}</Text>
         <Text style={styles.text2}>{item.description}</Text>
-        <Text style={styles.text3}>{item.price}</Text>
+        <Text style={styles.text4}>Cantidad: {item.quantity}</Text>
+        <Text style={styles.text3}>${item.price}</Text>
       </View>
       <FontAwesome style={styles.icon} name="trash-o" size={24} color="black" />
     </View>
@@ -56,16 +57,25 @@ icon:{
   text1:{
     color:"black",
     fontFamily:"Lexend",
-    fontSize:16,
-
+    fontSize:18,
+    margin:5,
   },
   text2:{
     color:"black",
     fontFamily:"Lexend",
-    fontSize:14,
+    fontSize:15,
+    margin:5,
   },
   text3:{
     color:"black",
     fontFamily:"Lexend",
-    fontSize:14,},
+    fontSize:18,
+    margin:5,
+  },
+  text4:{
+    color:"black",
+    fontFamily:"Lexend",
+    fontSize:16,
+    margin:5,
+  }
 })

@@ -1,0 +1,1 @@
+export const URL_FIREBASE = "https://morfi-burger-default-rtdb.firebaseio.com/"
